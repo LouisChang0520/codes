@@ -3,31 +3,22 @@
 <head>
     <meta http-equiv="default-style" content="">
     <meta http-equiv="refresh" content="30">
-    <style media="screen" type="text/css">
-        a {
-            background-color: grey;
-            color: white;
-            padding: 0.5em;
-        }
-    </style>
-    <style media="all">
-        a {
-            color: Red;
-            font-weight: bold;
-            font-style: italic
-        }
-    </style>
+    <script>
+var a = 135;
+var b = 246;
+document.write("<br>Before interchange, ");
+document.write("a = " + a + ", b = " +b);
+a ^= b ; document.write("<br>After interchange, ");
+document.write("a = " + a + ", b = " +b);
+        b ^= a ;document.write("<br>After interchange, ");
+document.write("a = " + a + ", b = " +b);
+        a ^= b ;
+document.write("<br>After interchange, ");
+document.write("a = " + a + ", b = " +b);
+</script>
 </head>
 <body>
- <p><img src="kobeshow.jpg" alt="My favorate basketball player:Kobe Bryant" title="This is my favorate basketball player in NBA" width="800" height="600" /></p>
-I like HTML.
-</hr> 
-I like CSS.</br>
-I like
-<a class="myClass" href="/index.html" id="myID">HTML</a> and CSS.</br>
-Enter what you like:<input enabled="">
-<input enabled="enabled"></br>
-this is <code>practice</code> test.
+ 
 </body>
 </html>    
 

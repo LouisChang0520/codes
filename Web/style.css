@@ -1,0 +1,121 @@
+.style {
+    width: 210px;
+    font-family: DFKai-sb, cursive, serif;
+    border: 3px red solid;
+    font-size: 16px;
+    background-color: rgb(0, 102, 128);
+    color: antiquewhite;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+}
+
+blockquote b {
+    color: beige;
+}
+
+.font {
+    font-family: serif, DFKai-sb, cursive;
+    color: red;
+    font-size: 35px;
+}
+
+ul {
+    list-style-type: square;
+    color: rebeccapurple;
+}
+
+h1 {
+    font-family: DFKai-sb, serif, cursive;
+    color: aquamarine;
+    font-size: 60px;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+h2 {
+    font-family: cursive, serif, DFKai-sb;
+    color: chartreuse;
+    font-size: 50px;
+    background-color: brown;
+    text-shadow: 1px 1px 1px #000000;
+    text-align: center;
+}
+
+h3 {
+    font-family: Arial, DFKai-sb, sans-serif;
+    font-size: 40px;
+    color: lawngreen;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: #00AAAA;
+    width: 100%;
+    text-align: center;
+}
+
+h4 {
+    font-family: Arial, DFKai-sb, sans-serif;
+    font-size: 40px;
+    color: limegreen;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: #BBFFEE;
+}
+
+a:link {
+    color: rebeccapurple;
+    text-decoration: blink;
+}
+
+a:visited {
+    color: cornflowerblue;
+}
+
+a:hover {
+    color: chocolate;
+    text-decoration: underline;
+}
+
+a:active {
+    color: darkgray;
+}
+
+a{
+    cursor: pointer;
+}
+
+input[type="Submit"]{
+    color: gray;
+    text-shadow: 1px 1px 1px #880000;
+    border-bottom: 2px solid;
+    background-color: wheat;    
+}
+
+input[type="Submit"]:hover{
+    color: #666666;
+    text-shadow: 1px 1px 1px #880000;
+    border-top: 2px solid;
+    background-color: #888888;    
+}
+
+fieldset{
+    width: 250px;
+    border:1px solid #888888;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
+legend{
+    background-color: #FF7744;
+    border: 1px solid #888888;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+video.medium{
+    width:700px;
+    height: 600px;
+}

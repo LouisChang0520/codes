@@ -10,9 +10,13 @@ namespace Myfirst
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello!World!");
-            Console.WriteLine("Welcome to C# world.");
-            Console.Read();
-        }
+            string ProductName;
+            int Price;
+            Console.Write("Product Name:");
+            ProductName = Console.ReadLine();
+            Console.Write("Price:");
+            Price = int.Parse(Console.ReadLine());
+            Console.WriteLine("ProdutName:{0} Price:{1} This Program is saved success",ProductName,Price);
+            Console.Read();        }
     }
 }

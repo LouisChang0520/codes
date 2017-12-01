@@ -1,0 +1,101 @@
+div,
+form,
+h1,
+h2,
+h3,
+p {
+    margin: auto;
+    padding: auto;
+}
+
+
+html,
+body {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: sans-serif, cursive;
+    background: url(../../resource/img/Doubter.-3D-illustration.-Isolated.-Contains-clipping-path-7690.jpg) center center fixed no-repeat;
+    background-size: cover;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+h1 {
+    width: 72%;
+    font-weight: 300;
+    margin: 0px auto 150px auto;
+    font-size: 180%;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+/*--h1底線--*/
+
+h1::after {
+    display: block;
+    background-color: #16dd6a;
+    content: "";
+    height: 2px;
+    width: auto;
+    margin-top: 15px;
+}
+
+
+/*--Buttom樣式--*/
+
+.btn-success,
+.btn-success:active {
+    border-radius: 20px;
+    border-color: #707a84;
+}
+
+
+.background {
+    margin: 10px 25px;
+    padding: 5px 25px 10px 25px;
+}
+
+.title {
+    font-family: DFKai-sb, cursive;
+}
+
+/*--輸入端大小--*/
+
+.container-fluid {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    letter-spacing: 3px;
+}
+
+
+.form-control {
+    height: auto;
+    width: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+label {
+    margin-bottom: 2px;
+}
+
+
+
+/*--Footer結尾--*/
+
+#footer {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.9;
+}

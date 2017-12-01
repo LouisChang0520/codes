@@ -1,0 +1,118 @@
+div,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Noto Sans TC", sans-serif;
+    background: url(../img/curls.png) center center;
+}
+
+h1 {
+    font-weight: 300;
+    margin-top: 80px;
+    font-size: 130%;
+    letter-spacing: 6px;
+}
+
+h2 {
+    font-size: 200%;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+h1:after {
+    display: block;
+    background-color: #ee33ee;
+    content: "";
+    height: 2px;
+    width: 100px;
+    margin-top: 15px;
+}
+
+
+.upfloor {
+    color: aliceblue;
+    position: absolute;
+    transform: translate(10%, 110%);
+}
+
+.btn:link {
+    margin-top: 20px;
+    font-weight: 100;
+    border-radius: 8px;
+    transition: background-color 0.4s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #ee33ee;
+    color: aliceblue;
+}
+
+
+.btn-full:hover {
+    background-color: rgba(224, 61, 68, 0.9);
+}
+
+
+
+
+
+
+
+/*--header--*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.4)), url(img/tumblr_niosnmIHNt1tlwzgvo1_1280.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+/*--about me--*/
+
+.about-me {
+    height: 35vh;
+}
+
+.title-row {
+    margin-top: 40px;
+    text-align: center;
+    color: #bfb6b6;
+}
+
+.title {
+    margin-top: 20px;
+    color: #bfb6b6;    
+}
+
+.dividerCenter {
+    height: 2px;
+    width: 40px;
+    background-color: #ee33ee;
+    margin: 15px auto;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.9;
+}
+

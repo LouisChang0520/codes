@@ -1,0 +1,65 @@
+html,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+table {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.47), rgba(211, 205, 205, 0.4)),url(../img/bg.png) repeat-x top center;
+    font-family: 'Noto Sans TC', sans-serif;
+    border-bottom: 50px solid #625e5e;
+    height: auto;
+}
+
+header{
+    margin: 5px auto;
+    padding: 5px auto;
+}
+
+
+.datatime {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    text-align: left;
+}
+
+input{
+    display: inline-block;
+    width: 90%;
+    border-radius: 20px;
+    font-size: 100%;
+}
+
+input:active{
+    background-color: #60b9f0;
+}
+input:hover{
+    color: #eb579c;
+}
+
+table {
+    width: auto;
+    margin: 10px auto;
+    padding: 10px auto;
+    color: #4c3eef;
+}
+
+
+footer {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.9;
+}

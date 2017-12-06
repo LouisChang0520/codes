@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="節能減碳愛地球，綠色革命，雲端節電，eco">
+    <meta name="author" content="中華電信(南崗服務中心）">
+    <link rel="icon" href="img/hinet%20logo01.jpg">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>節能技術查詢系統</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="row">
+            <div class="col-md-7">
+                <img src="img/Hinet%20logo.jpg" alt="中華電信-橫幅LOGO" /></div>
+            <div class="col-md-5">
+                <table class="datatime">
+                    <tr>
+                        <td>資料最後接收時間：</td>
+                    </tr>
+                    <tr>
+                        <td>資料上傳時間：</td>
+                    </tr>
+                    <tr>
+                        <td>資料接收時間：</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <table>
+                <tr>
+                    <th colspan="3"><img src="img/title_03.jpg" alt="再生能源新聞" /></th>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <img src="img/door_logo.png" alt="門口開關" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>地點</td>
+                    <td>狀態</td>
+                </tr>
+                <tr>
+                    <td>
+                        <Img ID="Idi1" src="img/green.png" alt="綠燈" />
+                    </td>
+                    <td>
+                        <input type="button" value="1F大門" onclick="location.href='#'">
+                        <Label id="Ldi1name"></Label>
+                    </td>
+                    <td>
+                        <Label id="Ldi1status">未知</Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <Img ID="Idi2" src="img/green.png" alt="綠燈" />
+                    </td>
+                    <td>
+                        <input type="button" value="1F機房" onclick="location.href='#'">
+                        <Label ID="Ldi2name"></Label>
+                    </td>
+                    <td>
+                        <Label ID="Ldi2status">未知</Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <Img ID="Idi3" src="img/green.png" alt="綠燈" />
+                    </td>
+                    <td>
+                        <input type="button" value="管理室" onclick="location.href='#'">
+                        <Label ID="Ldi3name"></Label>
+                    </td>
+                    <td>
+                        <Label ID="Ldi3status">未知</Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <Img ID="Idi4" src="img/green.png" alt="綠燈" />
+                    </td>
+                    <td>
+                        <input type="button" value="RF大門" onclick="location.href='#'">
+                        <Label ID="Ldi4name"></Label>
+                    </td>
+                    <td>
+                        <Label ID="Ldi4status">未知</Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <Img ID="Idi5" src="img/green.png" alt="綠燈" />
+                    </td>
+                    <td>
+                        <input type="button" value="2F冷氣狀態" onclick="location.href='#'">
+                        <Label ID="Ldi5name"></Label>
+                    </td>
+                    <td>
+                        <Label ID="Ldi5status">未知</Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <Img ID="Idi6" src="img/green.png" alt="綠燈" />
+                    </td>
+                    <td>
+                        <input type="button" value="1F冷氣狀態" onclick="location.href='#'">
+                        <Label ID="Ldi6name"></Label>
+                    </td>
+                    <td>
+                        <Label ID="Ldi6status">未知</Label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="col-md-4">
+            <table>
+                <tr>
+                    <th colspan="4">
+                        <img src="img/title_01.jpg" alt="環境溫溼度" />
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="4"><img src="img/TRMP_logo.png" alt="環境溫濕度" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="auto-style3">狀態點位</td>
+                    <td class="auto-style5">數值</td>
+                    <td>單位</td>
+                </tr>
+                <tr>
+                    <td>
+                        <Img ID="Iai1" src="img/green.png" alt="綠燈" />
+                    </td>
+                    <td class="auto-style3">
+                        <input type="button" value="出風溼度" onclick="location.href='#'">
+                        <Label ID="Lai1name"></Label>
+                    </td>
+                    <td class="auto-style5">
+                        <Label ID="Lai1">0.00</Label>
+                    </td>
+                    <td>RH</td>
+                </tr>
+                <tr>
+                    <td>
+                        <Img ID="Iai2" src="img/green.png" alt="綠燈" />
+                    </td>
+                    <td class="auto-style3">
+                        <input type="button" value="出風溫度" onclick="location.href='#'">
+                        <Label ID="Lai2name"></Label>
+                    </td>
+                    <td class="auto-style5">
+                        <Label ID="Lai2">0.00</Label>
+                    </td>
+                    <td>℃</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        <Img ID="Iai3" src="img/green.png" alt="綠燈" />
+                    </td>
+                    <td class="auto-style4">
+                        <input type="button" value="回風溫度1" onclick="location.href='#'">
+                        <Label ID="Lai3name"></Label>
+                    </td>
+                    <td class="auto-style6">
+                        <Label ID="Lai3">0.00</Label>
+                    </td>
+                    <td class="auto-style2">℃</td>
+                </tr>
+                <tr>
+                    <td>
+                        <Img ID="Iai4" src="img/green.png" alt="綠燈" />
+                    </td>
+                    <td class="auto-style3">
+                        <input type="button" value="回風溫度2" onclick="location.href='#'">
+                        <Label ID="Lai4name"></Label>
+                    </td>
+                    <td class="auto-style5">
+                        <Label ID="Lai4">0.00</Label>
+                    </td>
+                    <td>℃</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="col-md-4">
+            <table>
+                <tr>
+                    <th colspan="3">
+                        <button><img src="img/title_02.jpg" alt="冷氣狀態點位" onclick="location.href='#'" /></button>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <img src="img/air_logo.png" alt="冷氣" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <Label ID="Ldo1name">2F冷氣</Label>
+                    </td>
+                    <td>
+                        <input type="button" id="do1start" value="啟動" onclick="location.href='#'" />
+                    </td>
+                    <td>
+                        <input type="button" ID="do1stop" value="停止" onclick="location.href='#'" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <Label ID="Ldo2name">1F冷氣</Label>
+                    </td>
+                    <td>
+                        <input type="button" ID="do2start" value="啟動" onclick="location.href='#'" />
+                    </td>
+                    <td>
+                        <input type="button" ID="do2stop" value="停止" onclick="location.href='#'" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <footer>
+        <p><a href="#">中華電信(南崗服務中心)│</a> <a href="#">電話：049-226-1410│</a> <a href="#">地址：南投市南崗三路26號│</a> <a href="#">關於│ </a><a href="#">隱私權聲明│</a></p>
+    </footer>
+</body>
+
+</html>

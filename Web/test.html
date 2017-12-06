@@ -4,80 +4,86 @@
 <head>
     <title>practice</title>
     <meta charset="utf-8">
-    <meta name="keywords" content="網頁關鍵字,網頁關鍵字">
+    <meta name="viewport" content="width=device-width,initicial-scale=1.0">
     <meta name="author" content="Louis">
     <meta name="distribution" content="Taiwan">
-    <meta http-equiv="refresh" content="600">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="main.css" rel="stylesheet" type="text/css" media="(min-width:641px)">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanstc.css">
+    <link href="vendors/CSS/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="resources/CSS/main.css" rel="stylesheet" type="text/css" media="(min-width:641px)">
+    <link href="resources/CSS/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div id="MainShow">
-        <form action="http:\\www.funkyday.net\" target="_blank" />
-            <blockquote><b>Search</b>
-                <input type="search" name="search" placeholder="Keyword" />
-                <input type="submit" value="Search" />
-            </blockquote>
-        </form>
-        <h1 id="top">Practice Start</h1>
-        <ul>
-            <li><a href="#page1">About</a></li>
-            <li><a href="#page2">英文線上平台</a></li>
-        </ul>
-        <form action="http:\\www.funkyday.net\" method="post" />
-            <label for="username" style="color: aquamarine">日期:</label>
-            <input type="date" name="depart" />
-        </form>
-        <br>
-        <audio src="盧廣仲-魚仔.mp4" controls autoplay \><p>盧廣仲-魚仔</p></audio>
-        <hr/>
-        <h2 id="page1"><b>關於本頁</b></h2>
-        <div class="style">
-            This is <b>HTML</b> practice</div>
-        <figure>
-            <img src="wall%20Paper/kobeshow.jpg" alt="My favorate basketball player:Kobe Bryant" title="This is my favorate basketball player in NBA" width="1000" height="500" />
-            <figcaption>
-                <div class="font">Here is my favorate Basketball player in NBA</div>
+    <header>
+        <section id="home">
+            <div id="MainShow">
+                <form action="http:\\www.funkyday.net\" target="_blank">
+                <blockquote><b>Search</b>
+                    <input type="search" name="search" placeholder="Keyword">
+                    <input type="submit" value="Search" />
+                </blockquote>
+                </form>
+                <h1 id="top">Practice Start</h1>
+                <ul>
+                    <li><a class="btn" href="#page1">About</a></li>
+                    <li><a class="btn" href="#page2">英文線上平台</a></li>
+                </ul>
+                <form action="http:\\www.funkyday.net\" method="post">
+                <label for="username" style="color: aquamarine">日期:</label>
+                <input type="date" name="depart" />
+                </form>
                 <br>
-            </figcaption>
-        </figure>
-        <a href="#top">TOP</a>
-        <hr/>
-        <video src="NBA%20Top%2010%20Plays%202017-18%20NBA%20Season.mp4" poster="wall%2520Paper/Kobe-Bryant-Wallpaper-Hd.jpg" class="medium" preload="auto" controls loop></video><br/>
-            <div class="font">NBA TOP 10 PLAYER</div>
-            <div class="simple" style="color:blanchedalmond;">Html simple
-        <p><iframe src="http://funday.asia" width="700px" height="400px" frameborder="1" scrolling="auto"></iframe><br/></div>
-            <!--內嵌式視窗-->
-            <h3 id="page2"><a href="http://funday.asia" target="_blank">英文線上平台</a></h3>
-        <a href="#top">TOP</a>
+                <audio src="盧廣仲-魚仔.mp4" controls autoplay><p>盧廣仲-魚仔</p></audio>
+                <hr/>
+                </div>
+        </section>
+    </header>
+    <h2 id="page1"><b>關於本頁</b></h2>
+    <div class="style">
+        This is <b>HTML</b> practice</div>
+    <figure>
+        <img src="wall%20Paper/kobeshow.jpg" alt="My favorate basketball player:Kobe Bryant" title="This is my favorate basketball player in NBA" width="1000" height="500" />
+        <figcaption>
+            <div class="font">Here is my favorate Basketball player in NBA</div>
+            <br>
+        </figcaption>
+    </figure>
+    <a href="#top">TOP</a>
+    <hr/>
+    <video src="NBA%20Top%2010%20Plays%202017-18%20NBA%20Season.mp4" poster="wall%2520Paper/Kobe-Bryant-Wallpaper-Hd.jpg" class="medium" preload="auto" controls loop></video><br/>
+    <div class="font">NBA TOP 10 PLAYER</div>
+    <div class="simple" style="color:blanchedalmond;">Html simple
+        <iframe src="http://funday.asia" width="700px" height="400px" frameborder="1" scrolling="auto"></iframe><br/></div>
+    <!--內嵌式視窗-->
+    <h3 id="page2"><a href="http://funday.asia" target="_blank">英文線上平台</a></h3>
+    <a href="#top">TOP</a>
     </div>
     <!--頁首超連結-->
 
-        <div id="sidebar_right">
-            <h4>Other</h4>
-            <div style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:18px;color:yellow">How to use css div?</div>
-    <fieldset>
-        <legend style="color: blueviolet">調查表</legend>
-        <label style="color: rebeccapurple">年齡：<input type="text"name="age"/></label>
-        <br>
-        <font style="font-family:Georgia, 'Times New Roman', Times, serif;color:purple" type="text/css">性別：
-            <input id="female" type="radio" name="gener" value="f">
-            <label for="female">男</label>
-            <input id="male" type="radio" name="gener" value="m">
-            <label for="male">女</label>
-            <form action="http:\\www.funkyday.net\">
-                <font style="color: purple">你喜歡哪一種標籤?<br>
-                    <select name="devices">
+    <div id="sidebar_right">
+        <h4>Other</h4>
+        <div style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:18px;color:yellow">How to use css div?</div>
+        <fieldset>
+            <legend style="color: blueviolet">調查表</legend>
+            <label style="color: rebeccapurple">年齡：<input type="text"name="age"/></label>
+            <br>
+            <font style="font-family:Georgia, 'Times New Roman', Times, serif;color:purple" type="text/css">性別：
+                <input id="female" type="radio" name="gener" value="f">
+                <label for="female">男</label>
+                <input id="male" type="radio" name="gener" value="m">
+                <label for="male">女</label>
+                <form action="http:\\www.funkyday.net\">
+                    <font style="color: purple">你喜歡哪一種標籤?<br>
+                        <select name="devices">
             <option value="吃貨">吃貨</option>
             <option value="耍費">耍費</option>
             <option value="代購">代購</option>
         </select>
-            </form>
-    </fieldset>
+                </form>
+        </fieldset>
         <a href="http://www.funkyday.net" target="_blank">透明人的日常</a>
         <!--頁尾超連結＃為任意數-->
-        </div>
+    </div>
     <br>
 </body>
 <script>

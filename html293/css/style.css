@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display');
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-size: 14px;
-    font-family: Arial, serif;
+    font-family: Arial, sans-serif;
 }
 
 h1,
@@ -19,9 +19,47 @@ article,
 section {
     padding: 0;
     margin: 0;
+    letter-spacing: 4px;
+    line-height: 2;
 }
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link
+/*點擊之前*/
+
+a:visited
+/*點擊之後*/
+
+a:hover
+/*滑鼠指向時的狀態*/
+
+a:active
+/*點擊時*/
+
+
+/*超連結的四種狀態，必須按照順序填寫*/
 
 .title {
     font-family: 'Sedgwick Ave Display', cursive;
     font-size: 34px;
+    text-shadow: 1px 1px 5px rgb(202, 60, 60);
 }

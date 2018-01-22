@@ -145,9 +145,9 @@
     /* border: 3px solid rgb(249, 231, 211); */
     border-radius: 100%;
     margin-top: 20px;
-    position: absolute;
-    left: 42%;
-    top: 85%;
+    position: relative;
+    left: calc(100% * 2 / 5);
+    top: 102%;
     box-shadow: inset 0 0 1px 0 black;
 }
 
@@ -158,8 +158,8 @@
     width: 51px;
     border-radius: 100%;
     position: absolute;
-    left: 4.4px;
-    top: 4.5px;
+    left: calc(100% * 1 / 14);
+    top: calc(100% * 1 / 14);
 }
 
 

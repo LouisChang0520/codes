@@ -2,10 +2,32 @@
     /* border: 1px solid black; */
 }
 
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    background: url("https://images.unsplash.com/photo-1479762937580-3b682a10a0d8?auto=format&fit=crop&w=2389&q=80") center center no-repeat;
+}
+
 #topbar {
     background-color: rgb(180, 168, 180);
     position: relative;
-    top: -55px;
+    top: -60px;
+}
+
+#topbar:after {
+    content: "";
+    display: block;
+    background-image: url("../images/down-arrow-sketch.png");
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    z-index: 50;
 }
 
 #topbar:hover {
@@ -13,7 +35,7 @@
     top: 0;
 }
 
-.col-4 img {
+#topbar img {
     display: block;
     width: 60px;
     height: 60px;
@@ -22,9 +44,9 @@
 
 nav ul li {
     display: block;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 15px 15px 15px 15px;
-    box-shadow: inset 1px 0 2px 1px rgb(117, 116, 116);
+    /* box-shadow: inset 1px 0 2px 1px rgb(117, 116, 116); */
     list-style-type: none;
     width: 200px;
     height: 35px;
@@ -51,4 +73,74 @@ nav ul li:hover {
 
 nav ul li:active {
     background-color: rgb(247, 251, 252);
+}
+
+.row .container {
+    margin-right: 500px;
+}
+
+.row .col-md-4 .cm01 {
+    background-image: url("../images/Chi Marvel.jpg");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 200px;
+    height: 300px;
+    float: right;
+}
+
+.row .col-md-4 .cm01 p {
+    display: none;
+}
+
+.row .col-md-4:hover .cm01 p {
+    display: block;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    color: rgb(240, 13, 32);
+}
+
+.row .col-md-4 .cm02 {
+    background-image: url("../images/Jas Ch.jpg");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 200px;
+    height: 300px;
+    float: right;
+}
+
+.row .col-md-4 .cm02 p {
+    display: none;
+}
+
+.row .col-md-4:hover .cm02 p {
+    display: block;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    color: rgb(240, 13, 32);
+}
+
+.row .col-md-4 .cm03 {
+    background-image: url("../images/Shirley Hsueh.jpg");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 200px;
+    height: 300px;
+    float: right;
+}
+
+.row .col-md-4 .cm03 p {
+    display: none;
+}
+
+.row .col-md-4:hover .cm03 p {
+    display: block;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    color: rgb(240, 13, 32);
 }

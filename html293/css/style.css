@@ -1,146 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
 * {
-    /* border: 1px solid black; */
-}
-
-a {
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    list-style-type: none;
     text-decoration: none;
+    text-align: center;
+    font-family: 'Special Elite';
 }
 
 body {
     width: 100%;
-    background: url("https://images.unsplash.com/photo-1479762937580-3b682a10a0d8?auto=format&fit=crop&w=2389&q=80") center center no-repeat;
+    text-align: center;
 }
 
-#topbar {
-    background-color: rgb(180, 168, 180);
-    position: relative;
-    top: -60px;
-}
-
-#topbar:after {
-    content: "";
-    display: block;
-    background-image: url("../images/down-arrow-sketch.png");
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 60px;
-    left: 0px;
-    z-index: 50;
-}
-
-#topbar:hover {
-    position: relative;
+nav {
+    position: fixed;
     top: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
 }
 
-#topbar img {
-    display: block;
-    width: 60px;
-    height: 60px;
-    text-align: left;
+nav {
+    background-color: rgb(15, 15, 15);
+    opacity: 0.7;
 }
 
 nav ul li {
     display: block;
-    /* border: 1px solid black; */
-    border-radius: 15px 15px 15px 15px;
-    /* box-shadow: inset 1px 0 2px 1px rgb(117, 116, 116); */
-    list-style-type: none;
-    width: 200px;
-    height: 35px;
-    text-align: center;
     float: left;
-}
-
-nav ul li a {
-    color: rgb(116, 172, 53);
-    text-decoration: none;
+    width: 33%;
+    height: 50px;
+    /* border: 3px solid white; */
 }
 
 nav ul li a:link {
-    color: rgb(248, 246, 246);
+    color: white;
 }
 
 nav ul li a:visited {
-    color: rgb(236, 140, 140);
+    color: rgb(2, 128, 33);
 }
 
-nav ul li:hover {
-    background-color: rgb(91, 218, 235);
+nav ul li a:hover {
+    color: rgb(160, 4, 4);
+    font-size: 30px;
 }
 
-nav ul li:active {
-    background-color: rgb(247, 251, 252);
+header {
+    text-align: center;
+    background: url("https://images.unsplash.com/photo-1479762937580-3b682a10a0d8?auto=format&fit=crop&w=2389&q=80") center fixed no-repeat;
+    height: 80vh;
+    color: rgb(165, 11, 5);
 }
 
-.row .container {
-    margin-right: 500px;
+header h1 {
+    font-size: 50px;
+    padding-top: calc((80vh - 50px) / 2);
 }
 
-.row .col-md-4 .cm01 {
+header p {
+    font-size: 25px;
+}
+
+section {
+    background: url("../images/cloudy-day.png");
+}
+
+.row .col-12 h2 {
+    color: rgb(131, 128, 128);
+    font-size: 33px;
+    text-shadow: 2px 2px black;
+}
+
+[class^="col-"] {
+    margin: 20px auto;
+    /* border: 3px solid red; */
+}
+
+[class^="card"] {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    align-content: space-between;
+}
+
+[class^="card"]:hover {
+    box-shadow: inset 0 0 50px 30px rgb(97, 91, 91);
+}
+
+[class^="card"] p {
+    display: none;
+}
+
+.card1 {
     background-image: url("../images/Chi Marvel.jpg");
-    background-size: 200px;
+    background-size: 180px 200px;
     background-repeat: no-repeat;
-    display: block;
-    width: 200px;
-    height: 300px;
-    float: right;
+    width: 180px;
+    height: 200px;
 }
 
-.row .col-md-4 .cm01 p {
-    display: none;
-}
-
-.row .col-md-4:hover .cm01 p {
+.card1:hover p {
     display: block;
     position: relative;
-    top: 100px;
+    top: 50%;
+    left: 15%;
     text-align: center;
     color: rgb(240, 13, 32);
 }
 
-.row .col-md-4 .cm02 {
+.card2 {
     background-image: url("../images/Jas Ch.jpg");
-    background-size: 200px;
+    background-size: 180px 200px;
     background-repeat: no-repeat;
-    display: block;
-    width: 200px;
-    height: 300px;
-    float: right;
+    width: 180px;
+    height: 200px;
 }
 
-.row .col-md-4 .cm02 p {
-    display: none;
-}
-
-.row .col-md-4:hover .cm02 p {
+.card2:hover p {
     display: block;
     position: relative;
-    top: 100px;
+    top: 50%;
+    left: 40%;
     text-align: center;
     color: rgb(240, 13, 32);
 }
 
-.row .col-md-4 .cm03 {
+.card3 {
     background-image: url("../images/Shirley Hsueh.jpg");
-    background-size: 200px;
+    background-size: 180px 200px;
     background-repeat: no-repeat;
-    display: block;
-    width: 200px;
-    height: 300px;
-    float: right;
+    width: 180px;
+    height: 200px;
 }
 
-.row .col-md-4 .cm03 p {
-    display: none;
-}
-
-.row .col-md-4:hover .cm03 p {
+.card3:hover p {
     display: block;
     position: relative;
-    top: 100px;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    color: rgb(240, 13, 32);
+}
+
+.card4 {
+    background-image: url("../images/Vanessa Lin.jpg");
+    background-size: 180px 200px;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 200px;
+}
+
+.card4:hover p {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 5%;
+    text-align: center;
+    color: rgb(240, 13, 32);
+}
+
+.card5 {
+    background-image: url("../images/Yi-Jiun Yin.jpg");
+    background-size: 180px 200px;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 200px;
+}
+
+.card5:hover p {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    text-align: center;
+    color: rgb(240, 13, 32);
+}
+
+.card6 {
+    background-image: url("../images/Ya-ting Hsu.jpg");
+    background-size: 180px 200px;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 200px;
+}
+
+.card6:hover p {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    text-align: center;
+    color: rgb(240, 13, 32);
+}
+
+.card7 {
+    background-image: url("../images/葉明輝.jpg");
+    background-size: 180px 200px;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 200px;
+}
+
+.card7:hover p {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 80%;
+    text-align: center;
+    color: rgb(240, 13, 32);
+}
+
+.card8 {
+    background-image: url("../images/楊筑鈞.jpg");
+    background-size: 180px 200px;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 200px;
+}
+
+.card8:hover p {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 80%;
     text-align: center;
     color: rgb(240, 13, 32);
 }

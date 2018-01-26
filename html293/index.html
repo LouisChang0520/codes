@@ -7,14 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HW Website</title>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <link rel="stylesheet" href="http://louis0117-repo.surge.sh/CSS/reset.css" type="text/css">
-    <link rel="stylesheet" href="http://louis0117-repo.surge.sh/CSS/grid.css">
+    <link rel="stylesheet" href="https://louis0117-repo.surge.sh/CSS/reset.css" type="text/css">
+    <link rel="stylesheet" href="https://louis0117-repo.surge.sh/CSS/grid.css">
     <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" type="text/javascript" href="./node_modules/jquery/dist/jquery.min.js">
+
 </head>
 
 <body>
-    <nav>
+    <nav id="scrollbar">
         <ul>
             <li>
                 <a href="#">Home</a>
@@ -105,13 +106,17 @@
             </div>
         </div>
     </section>
+    <a data-scroll href="#uptop" id="gotop">
+        <img src="./images/up-arrow-outline-pointing-other-shape.png" alt="^" />
+    </a>
 
 
 
 
-
-
-
+    <script src="./js/smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 
     <script src="./js/app.js"></script>
     <script src="./node_modules/popper.js/dist/umd/popper.min.js" type="text/javascript"></script>

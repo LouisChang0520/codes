@@ -9,3 +9,28 @@ $(function () {
     $("#btn01").click(sayHello);
     $("title").click(sayHello);
 });
+
+
+$(function () {
+            function displayBar(event) {
+                $("#scrollbar").slideDown();
+            }
+            $("#scrollbar").scroll(displayBar);
+
+
+        };
+
+        $(function () {
+            $("#uptop").click(function () {
+                jQuery("html,body").animate({
+                    scrollTop: 0
+                }, 1000);
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('#uptop').fadeIn("fast");
+                } else {
+                    $('#uptop').stop().fadeOut("fast");
+                }
+            });
+        });

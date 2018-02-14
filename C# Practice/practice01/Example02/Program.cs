@@ -11,6 +11,7 @@ namespace Example02
         private static void Main(string[] args)
         {
             Student student = new Student();
+
             student.Name = "Louis";
             student.Email = "123456@gmail.com";
         }

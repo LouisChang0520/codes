@@ -40,7 +40,7 @@
             this.HWbutton1.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.HWbutton1.Location = new System.Drawing.Point(584, 45);
             this.HWbutton1.Name = "HWbutton1";
-            this.HWbutton1.Size = new System.Drawing.Size(305, 40);
+            this.HWbutton1.Size = new System.Drawing.Size(305, 101);
             this.HWbutton1.TabIndex = 1;
             this.HWbutton1.Text = "作業01";
             this.HWbutton1.UseVisualStyleBackColor = true;
@@ -49,9 +49,9 @@
             // HWbutton2
             // 
             this.HWbutton2.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.HWbutton2.Location = new System.Drawing.Point(584, 141);
+            this.HWbutton2.Location = new System.Drawing.Point(584, 182);
             this.HWbutton2.Name = "HWbutton2";
-            this.HWbutton2.Size = new System.Drawing.Size(305, 40);
+            this.HWbutton2.Size = new System.Drawing.Size(305, 107);
             this.HWbutton2.TabIndex = 2;
             this.HWbutton2.Text = "作業02";
             this.HWbutton2.UseVisualStyleBackColor = true;

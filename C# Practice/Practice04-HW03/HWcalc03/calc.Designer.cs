@@ -71,7 +71,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(560, 33);
             this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "請輸入數字";
+            this.textBox3.Text = "四則運算,請輸入數字";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Addbutton

@@ -25,7 +25,12 @@ namespace HWcalc03
             }
             if (e.KeyChar == '.')
             {
-                foreach (char D in InputBox1.Text + InputBox2.Text)
+                foreach (char D in InputBox2.Text)
+                {
+                    if (D == '.')
+                        e.Handled = true;
+                }
+                foreach (char D in InputBox2.Text)
                 {
                     if (D == '.')
                         e.Handled = true;
@@ -40,15 +45,15 @@ namespace HWcalc03
 
             if (((Button)sender).Text == "+")
             {
-                ResultBox3.Text = (a + b).ToString("0.###");
+                ResultBox3.Text = (a + b).ToString("0.####");
             }
             else if (((Button)sender).Text == "-")
             {
-                ResultBox3.Text = (a - b).ToString();
+                ResultBox3.Text = (a - b).ToString("0.####");
             }
             else if (((Button)sender).Text == "x")
             {
-                ResultBox3.Text = (a * b).ToString();
+                ResultBox3.Text = (a * b).ToString("0.####");
             }
             else
             {
@@ -58,7 +63,7 @@ namespace HWcalc03
                 }
                 else
                 {
-                    ResultBox3.Text = (a / b).ToString();
+                    ResultBox3.Text = (a / b).ToString("0.####");
                 }
             }
         }

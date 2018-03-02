@@ -52,33 +52,6 @@ namespace MainWindow
                     currentScene.ChangeTo(6);
                     break;
             }
-            //if (currentScene.Id == 1)
-            //{
-            //    if (decision == 1)
-            //        currentScene.ChangeTo(2);
-            //}
-            //else if (currentScene.Id == 2)
-            //{
-            //    if (decision == 1)
-            //        currentScene.ChangeTo(3);
-            //    else
-            //        currentScene.ChangeTo(4);
-            //}
-            //else if (currentScene.Id == 3)
-            //{
-            //    if (decision == 1)
-            //        currentScene.ChangeTo(4);
-            //    else
-            //        currentScene.ChangeTo(5);
-            //}
-            //else if (currentScene.Id == 4)
-            //{
-            //    currentScene.ChangeTo(1);
-            //}
-            //else if (currentScene.Id == 5)
-            //{
-            //    currentScene.ChangeTo(6);
-            //}
         }
 
         private void YESButton_Click(object sender, EventArgs e)

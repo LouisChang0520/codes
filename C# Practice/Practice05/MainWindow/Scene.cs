@@ -62,30 +62,6 @@ namespace MainWindow
                     return global::MainWindow.Properties.Resources._6;
                     break;
             }
-            //if (this.Id == 1)
-            //{
-            //    return global::MainWindow.Properties.Resources._1;
-            //}
-            //else if (this.Id == 2)
-            //{
-            //    return global::MainWindow.Properties.Resources._2;
-            //}
-            //else if (this.Id == 3)
-            //{
-            //    return global::MainWindow.Properties.Resources._3;
-            //}
-            //else if (this.Id == 4)
-            //{
-            //    return global::MainWindow.Properties.Resources._4;
-            //}
-            //else if (this.Id == 5)
-            //{
-            //    return global::MainWindow.Properties.Resources._5;
-            //}
-            //else
-            //{
-            //    return global::MainWindow.Properties.Resources._6;
-            //}
         }
 
         public void ChangeTo(int id)

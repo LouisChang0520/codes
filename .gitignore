@@ -240,3 +240,7 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+C# Practice/.Practice001.sln.icloud
+C# Practice/Practice001/.Form1.cs.icloud
+C# Practice/Practice001/Properties/.AssemblyInfo.cs.icloud
+C# Practice/Practice001/Properties/.Settings.Designer.cs.icloud

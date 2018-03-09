@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Diagnostics;
+using System.Text.RegularExpressions;
 
 namespace Practice06_Calc
 {
@@ -18,110 +18,127 @@ namespace Practice06_Calc
             InitializeComponent();
         }
 
+        private double a;
+        private double b;
+        private double C;
+        private double l;
+        private int n;
+        private string I;
+        private string i;
+
         private void button0_Click(object sender, EventArgs e)
         {
-            //if (ResultBox.Text == "0")
-            //{
-            //    ResultBox.Text = "";
-            //}
-            //ResultBox.Text += ((Button)sender).Text;
             Button Num = (Button)sender;
-            ResultBox.Text += Num.Text;
+            l = Convert.ToDouble(Num.Text);
+            if (n > 0)
+            {
+                ViewBox.Text = "";
+                n--;
+                if (n < 1)
+                {
+                    ViewBox.Text += Num.Text;
+                }
+            }
+            else
+            {
+                ViewBox.Text += Num.Text;
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if (ResultBox.Text.IndexOf(".") < 0)
+            if (ViewBox.Text.IndexOf(".") < 0)
             {
-                ResultBox.Text = ResultBox.Text + ".";
+                ViewBox.Text = ViewBox.Text + ".";
             }
         }
 
         private void Translate_Click(object sender, EventArgs e)
         {
-            if (double.Parse(ResultBox.Text) != 0)
+            if (double.Parse(ViewBox.Text) != 0)
             {
-                int a = ResultBox.Text.IndexOf("-");
-                if (ResultBox.Text.IndexOf("-") >= 0)
+                int a = ViewBox.Text.IndexOf("-");
+                if (ViewBox.Text.IndexOf("-") >= 0)
                 {
-                    ResultBox.Text = ResultBox.Text.Replace("-", "");
+                    ViewBox.Text = ViewBox.Text.Replace("-", "");
                 }
                 else
                 {
-                    ResultBox.Text = "-" + ResultBox.Text;
+                    ViewBox.Text = "-" + ViewBox.Text;
                 }
             }
         }
 
-        public double A;
-        private string I;
-        private string i;
-
         private void Addbutton_Click(object sender, EventArgs e)
         {
-            //a = double.Parse(ResultBox.Text);
-            //ResultBox.Text = a.ToString();
-            //i = ((Button)sender).Tag.ToString();
             Button CC = sender as Button;
-            if (!(ResultBox.Text == ""))
+            i = CC.Text;
+            I = l.ToString();
+            ViewBox.Text += CC.Text;
+        }
+
+        private void mathCalc()
+        {
+            a = Convert.ToDouble(I);
+            b = Convert.ToDouble(l);
+
+            switch (i)
             {
-                i = CC.Text;
-                I = ResultBox.Text;
+                case "+":
+                    C = a + b;
+                    break;
+
+                case "-":
+                    C = a - b;
+                    break;
+
+                case "X":
+                    C = a * b;
+                    break;
+
+                case "÷":
+                    C = a / b;
+                    break;
             }
         }
 
         private void Equalbutton_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(I);
-            double b = double.Parse(ResultBox.Text);
-            double c = 0;
-            switch (i)
-            {
-                case "+":
-                    c = a + b;
-                    break;
-
-                case "-":
-                    c = a - b;
-                    break;
-
-                case "X":
-                    c = a * b;
-                    break;
-
-                case "÷":
-                    c = a / b;
-                    break;
-            }
-            ResultBox.Text = c.ToString();
-            //a = c;
+            this.mathCalc();
+            ResultBox.Text = C.ToString();
+            n++;
         }
 
         private void Clear_Click(object sender, EventArgs e)
         {
-            ResultBox.Text = "0";
-            A = 0;
+            ViewBox.Text = "";
+            ResultBox.Text = "";
             i = "";
         }
 
         private void Bkspace_Click(object sender, EventArgs e)
         {
-            if (ResultBox.Text.Length > 1)
+            if (ViewBox.Text.Length > 1)
             {
-                ResultBox.Text = ResultBox.Text.Substring(0, ResultBox.Text.Length - 1);
+                if (ResultBox.Text.Length > 1)
+
+                    ResultBox.Text = ResultBox.Text.Substring(0, ResultBox.Text.Length - 1);
+                else
+                    ViewBox.Text = ViewBox.Text.Substring(0, ViewBox.Text.Length - 1);
             }
             else
             {
-                ResultBox.Text = "0";
+                ViewBox.Text = "0";
+                ResultBox.Text = "";
             }
         }
 
         private void Root_Click(object sender, EventArgs e)
         {
-            A = double.Parse(ResultBox.Text);
+            a = double.Parse(ViewBox.Text);
             if (((Button)sender).Text == "√")
             {
-                double Sqrt = Math.Sqrt(A);
+                double Sqrt = Math.Sqrt(a);
                 ResultBox.Text = Sqrt.ToString();
             }
         }

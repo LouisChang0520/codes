@@ -49,6 +49,7 @@
             this.Translate = new System.Windows.Forms.Button();
             this.Root = new System.Windows.Forms.Button();
             this.Bkspace = new System.Windows.Forms.Button();
+            this.ViewBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // ResultBox
@@ -57,11 +58,11 @@
             this.ResultBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ResultBox.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.ResultBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.ResultBox.Location = new System.Drawing.Point(-7, 0);
+            this.ResultBox.Location = new System.Drawing.Point(-7, 63);
             this.ResultBox.Multiline = true;
             this.ResultBox.Name = "ResultBox";
             this.ResultBox.ReadOnly = true;
-            this.ResultBox.Size = new System.Drawing.Size(360, 128);
+            this.ResultBox.Size = new System.Drawing.Size(360, 65);
             this.ResultBox.TabIndex = 0;
             this.ResultBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -153,9 +154,9 @@
             // 
             this.button0.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button0.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button0.Location = new System.Drawing.Point(15, 407);
+            this.button0.Location = new System.Drawing.Point(95, 407);
             this.button0.Name = "button0";
-            this.button0.Size = new System.Drawing.Size(150, 65);
+            this.button0.Size = new System.Drawing.Size(70, 65);
             this.button0.TabIndex = 8;
             this.button0.Text = "0";
             this.button0.UseVisualStyleBackColor = true;
@@ -214,9 +215,9 @@
             this.Divbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Divbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Divbutton.Font = new System.Drawing.Font("微軟正黑體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Divbutton.Location = new System.Drawing.Point(258, 186);
+            this.Divbutton.Location = new System.Drawing.Point(260, 134);
             this.Divbutton.Name = "Divbutton";
-            this.Divbutton.Size = new System.Drawing.Size(80, 50);
+            this.Divbutton.Size = new System.Drawing.Size(80, 46);
             this.Divbutton.TabIndex = 13;
             this.Divbutton.Tag = "÷";
             this.Divbutton.Text = "÷";
@@ -228,9 +229,9 @@
             this.Multibutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Multibutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Multibutton.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Multibutton.Location = new System.Drawing.Point(258, 242);
+            this.Multibutton.Location = new System.Drawing.Point(260, 192);
             this.Multibutton.Name = "Multibutton";
-            this.Multibutton.Size = new System.Drawing.Size(80, 50);
+            this.Multibutton.Size = new System.Drawing.Size(80, 60);
             this.Multibutton.TabIndex = 14;
             this.Multibutton.Tag = "X";
             this.Multibutton.Text = "X";
@@ -242,9 +243,9 @@
             this.Subbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Subbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Subbutton.Font = new System.Drawing.Font("微軟正黑體", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Subbutton.Location = new System.Drawing.Point(258, 298);
+            this.Subbutton.Location = new System.Drawing.Point(260, 263);
             this.Subbutton.Name = "Subbutton";
-            this.Subbutton.Size = new System.Drawing.Size(80, 50);
+            this.Subbutton.Size = new System.Drawing.Size(80, 61);
             this.Subbutton.TabIndex = 15;
             this.Subbutton.Tag = "-";
             this.Subbutton.Text = "-";
@@ -256,9 +257,9 @@
             this.Addbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Addbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Addbutton.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Addbutton.Location = new System.Drawing.Point(258, 354);
+            this.Addbutton.Location = new System.Drawing.Point(258, 336);
             this.Addbutton.Name = "Addbutton";
-            this.Addbutton.Size = new System.Drawing.Size(80, 50);
+            this.Addbutton.Size = new System.Drawing.Size(80, 60);
             this.Addbutton.TabIndex = 16;
             this.Addbutton.Tag = "+";
             this.Addbutton.Text = "+";
@@ -270,9 +271,9 @@
             this.Equalbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Equalbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Equalbutton.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Equalbutton.Location = new System.Drawing.Point(258, 410);
+            this.Equalbutton.Location = new System.Drawing.Point(258, 407);
             this.Equalbutton.Name = "Equalbutton";
-            this.Equalbutton.Size = new System.Drawing.Size(80, 61);
+            this.Equalbutton.Size = new System.Drawing.Size(80, 64);
             this.Equalbutton.TabIndex = 17;
             this.Equalbutton.Tag = "=";
             this.Equalbutton.Text = "=";
@@ -283,9 +284,9 @@
             // 
             this.Translate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Translate.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Translate.Location = new System.Drawing.Point(95, 134);
+            this.Translate.Location = new System.Drawing.Point(15, 407);
             this.Translate.Name = "Translate";
-            this.Translate.Size = new System.Drawing.Size(69, 46);
+            this.Translate.Size = new System.Drawing.Size(69, 64);
             this.Translate.TabIndex = 18;
             this.Translate.Text = "+/-";
             this.Translate.UseVisualStyleBackColor = true;
@@ -295,7 +296,7 @@
             // 
             this.Root.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Root.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Root.Location = new System.Drawing.Point(176, 134);
+            this.Root.Location = new System.Drawing.Point(95, 134);
             this.Root.Name = "Root";
             this.Root.Size = new System.Drawing.Size(70, 46);
             this.Root.TabIndex = 19;
@@ -309,13 +310,27 @@
             this.Bkspace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Bkspace.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bkspace.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Bkspace.Location = new System.Drawing.Point(258, 134);
+            this.Bkspace.Location = new System.Drawing.Point(176, 134);
             this.Bkspace.Name = "Bkspace";
-            this.Bkspace.Size = new System.Drawing.Size(80, 46);
+            this.Bkspace.Size = new System.Drawing.Size(70, 46);
             this.Bkspace.TabIndex = 20;
             this.Bkspace.Text = "←";
             this.Bkspace.UseVisualStyleBackColor = false;
             this.Bkspace.Click += new System.EventHandler(this.Bkspace_Click);
+            // 
+            // ViewBox
+            // 
+            this.ViewBox.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ViewBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ViewBox.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.ViewBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.ViewBox.Location = new System.Drawing.Point(-7, 1);
+            this.ViewBox.Multiline = true;
+            this.ViewBox.Name = "ViewBox";
+            this.ViewBox.ReadOnly = true;
+            this.ViewBox.Size = new System.Drawing.Size(360, 65);
+            this.ViewBox.TabIndex = 21;
+            this.ViewBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LittleCalc
             // 
@@ -323,6 +338,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(352, 484);
+            this.Controls.Add(this.ViewBox);
             this.Controls.Add(this.Bkspace);
             this.Controls.Add(this.Root);
             this.Controls.Add(this.Translate);
@@ -374,6 +390,7 @@
         private System.Windows.Forms.Button Translate;
         private System.Windows.Forms.Button Root;
         private System.Windows.Forms.Button Bkspace;
+        private System.Windows.Forms.TextBox ViewBox;
     }
 }
 

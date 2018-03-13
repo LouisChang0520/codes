@@ -146,24 +146,23 @@ namespace Practice06_Calc
 
         private void Bkspace_Click(object sender, EventArgs e)
         {
-            if (ViewBox.Text.Length > 1)
+            if (ResultBox.Text.Length > 0)
             {
-                if (ResultBox.Text.Length > 1)
+                ResultBox.Text = ResultBox.Text.Substring(0, ResultBox.Text.Length - 1);
+                if (ViewBox.Text.Length > 0 && ResultBox.Text.Length == 0)
 
-                    ResultBox.Text = ResultBox.Text.Substring(0, ResultBox.Text.Length - 1);
-                else
                     ViewBox.Text = ViewBox.Text.Substring(0, ViewBox.Text.Length - 1);
             }
             else
             {
-                ViewBox.Text = "0";
+                ViewBox.Text = "";
                 ResultBox.Text = "";
             }
         }
 
         private void Root_Click(object sender, EventArgs e)
         {
-            a = double.Parse(ViewBox.Text);
+            a = double.Parse(ResultBox.Text);
             if (((Button)sender).Text == "√")
             {
                 double Sqrt = Math.Sqrt(a);

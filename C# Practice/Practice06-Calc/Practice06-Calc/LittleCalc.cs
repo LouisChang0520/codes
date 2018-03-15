@@ -35,11 +35,14 @@ namespace Practice06_Calc
             Button Num = (Button)sender;
             ResultBox.Text += Num.Text;
             l = Convert.ToDouble(ResultBox.Text);
+
             N++;
             if (n > 0)
             {
                 l = Convert.ToDouble(Num.Text);
-                ViewBox.Text = "";
+                c = Convert.ToDouble(Num.Text);
+                ViewBox.Text += "";
+                ResultBox.Text = c.ToString();
                 n--;
                 if (n < 1)
                 {
@@ -48,7 +51,13 @@ namespace Practice06_Calc
             }
             else
             {
-                ResultBox.Text = l.ToString();
+                if (m > 1)
+                {
+                    l = Convert.ToDouble(Num.Text);
+                    ResultBox.Text = l.ToString();
+                }
+                else
+                    ResultBox.Text = l.ToString();
             }
         }
 
@@ -79,9 +88,7 @@ namespace Practice06_Calc
         private void Addbutton_Click(object sender, EventArgs e)
         {
             Button CC = sender as Button;
-            i = CC.Text;
             m++;
-
             if (ResultBox.Text == "")
             {
                 ResultBox.Text = "";
@@ -89,18 +96,60 @@ namespace Practice06_Calc
             else
             {
                 u = Convert.ToDouble(ResultBox.Text);
-                I = u.ToString();
-                c = double.Parse(I);
-                ViewBox.Text += u + i;
+                i = CC.Text;
+
+                //Convert.ToDouble(I);
+
+                //c = Convert.ToDouble(I);
+
                 ResultBox.Text = "";
+                if (m > 1)
+                {
+                    addCalc();
+                    ResultBox.Text = C.ToString();
+                }
+
+                if (n > 0)
+                {
+                    ViewBox.Text += u + i;
+                    n = 0;
+                }
+                else { ViewBox.Text += u + i; }
+                I = u.ToString();
             }
+        }
+
+        private void addCalc()
+        {
+            a = Convert.ToDouble(I);
+            b = Convert.ToDouble(u);
+            switch (i)
+            {
+                case "+":
+                    C = a + b;
+                    break;
+
+                case "-":
+                    C = a - b;
+                    break;
+
+                case "X":
+                    C = a * b;
+                    break;
+
+                case "÷":
+                    C = a / b;
+                    break;
+            }
+            ResultBox.Text = C.ToString();
+            a = C;
         }
 
         private void mathCalc()
         {
-            a = Convert.ToDouble(I);
-            b = Convert.ToDouble(u);
-
+            //a = Convert.ToDouble(I);
+            b = Convert.ToDouble(ResultBox.Text);
+            //b = Convert.ToDouble(u);
             switch (i)
             {
                 case "+":
@@ -120,7 +169,8 @@ namespace Practice06_Calc
                     break;
             }
 
-            ResultBox.Text = a.ToString();
+            ResultBox.Text = C.ToString();
+            a = C;
         }
 
         private void Equalbutton_Click(object sender, EventArgs e)
@@ -128,11 +178,11 @@ namespace Practice06_Calc
             u = Convert.ToDouble(ResultBox.Text);
             this.mathCalc();
             ResultBox.Text = C.ToString();
-            m--;
+            m = 0;
             n++;
             if (u >= 0)
             {
-                ViewBox.Text += u.ToString();
+                ViewBox.Text = "";
                 ResultBox.Text = C.ToString();
             }
         }

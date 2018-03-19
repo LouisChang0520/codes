@@ -89,7 +89,7 @@ namespace PhoneDBTest
             OleDbConnection ConnTwo = new OleDbConnection(ConnOne);
             if (ConnTwo.State == ConnectionState.Closed)
                 ConnTwo.Open();
-            string SelectGetPhoneNum = "SELECT * FROM list";
+            string SelectGetPhoneNum = "INSERT into list ([S_NO], [NAME], [SEX], [TEL], [BIRTHDAY], [ADDRESS]) VALUES('" + NumBox.Text + "','" + NameBox.Text + "','" + SexBox.Text + "','" + PhoneBox.Text + "','" + BirthBox.Text + "','" + AdsBox.Text + "')";
             try
             {
                 OleDbCommand CmdGetPhoneNum = new OleDbCommand(SelectGetPhoneNum, ConnTwo);
@@ -111,6 +111,7 @@ namespace PhoneDBTest
             {
                 MessageBox.Show("異常", "就說錯啦", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            MainForm_Load(sender, e);
         }
 
         private void EditButton_Click(object sender, EventArgs e)

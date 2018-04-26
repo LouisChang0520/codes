@@ -18,12 +18,12 @@ namespace OtherCalc
         }
 
         private int Fn;
-        private int i;
+        private long i;
 
         private void Transbutton_Click(object sender, EventArgs e)
         {
             Fn = Convert.ToInt32(InputBox.Text);
-            int[] Fs = new int[Fn];
+            long[] Fs = new long[Fn];
             Fs[0] = 1;
             Fs[1] = 1;
             if (Fn < 3)
